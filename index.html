@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Братик 3 місяці</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div class="language-switcher">
+    <button onclick="showLanguage('de')">Deutsch</button>
+    <button onclick="showLanguage('uk')">Українська</button>
+  </div>
+
+  <div class="text" id="de">
+    <h1>Zum 3-Monats-Tag, kleiner Bruder!</h1>
+    <p>Du bist unser kleines Wunder.</p>
+    <p>Wachse gesund und glücklich auf!</p>
+    <p>Wir haben dich ganz doll lieb!</p>
+  </div>
+
+  <div class="text" id="uk" style="display:none;">
+    <h1>З Днем 3-х місяців, братику!</h1>
+    <p>Ти — наше маленьке диво.</p>
+    <p>Рости здоровим і щасливим!</p>
+    <p>Ми дуже тебе любимо!</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function showLanguage(lang) {
+      document.getElementById('uk').style.display = lang === 'uk' ? 'block' : 'none';
+      document.getElementById('de').style.display = lang === 'de' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
